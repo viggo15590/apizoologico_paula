@@ -36,6 +36,7 @@ router.put("/animals/:id", (req, res) => {
         .catch((error) => res.json({ message: error }));
 });
 //Eliminar un animal por su id
+ 
 
 router.delete("/animals/:id", (req, res) => {
     const { id } = req.params;
